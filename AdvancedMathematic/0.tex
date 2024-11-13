@@ -1,11 +1,15 @@
-\chapter{实数}
+\chapter{函数与极限}
 
-\section{有理数}
+\section{实数}
+
+\subsection{有理数}
 
 众所周知, 实数分为有理数和无理数. 让我们先进入有理数的领域. 
 
 \begin{defination}[有理数]
     两个既约整数的比值. 
+    \item 整数的比值
+    \item 既约: 已经约分过. 没有比1更大的公约数. 
     A = \{ x \in \mathbb{R} \mid x > 0 \}
 \end{defination}
 
@@ -16,3 +20,46 @@
     if a \in \mathbb{R} and b \in \mathbb{R}. 
     then a+b, a-b, a*b, a/b \in \mathbb{R}. 
 \end{comment}
+
+\subsection{无理数}
+
+如何证明无理数存在. (这里有一个关于毕达哥拉斯的故事), 直观在数轴上有理数之间总是有一个有理数, 似乎整个数轴上全是有理数. 稠密. 
+
+\begin{proposition}[证明\sqrt{2}不是有理数]
+    \item \sqrt{2} = m / n (m, n \in Q)
+    \item (m, n )= 1
+    \item m^2 = 2* n^2 (\sqrt{2}不知道是不是有理数, 先进行转化)
+    \item m = 2n, 与题设矛盾. 
+\end{proposition}
+\begin{comment}
+    这里学习的关键在于学会了
+    \item 反证法
+    \item 利用定义进行逻辑推理. 
+\end{comment}
+
+\subsection{实数集}
+
+\begin{definition}[实数集的定义]
+    有理数和无理数的集合. 
+\end{definition}
+
+\begin{definition}[实数性质]
+    \item 是一个数域. 
+    \item 对加法乘法满足交换律, 分配率, 结合率. 
+    \item 是一个有序数域. (即每个数字之间都可以比较, 反例可参照地铁站点. )
+    \item 具有完备性. 
+\end{definition}
+
+\begin{definition}[实数的完备性]
+    实数布满数轴. 
+    在实数域中, 每一个单调有界序列都存在极限. (相关的定义证明在后续提及)
+\end{definition}
+
+\begin{proof}
+    两个有理数之间必定存在有理数. 
+    两个有理数之间必定存在无理数. 
+    两个无理数之间制定存在有理数. (利用小数的直观推理, 借助有理数的性质去逼近)
+    两个无理数之间必定存在无理数. 
+\end{exercise}
+
+\section{变量与函数}

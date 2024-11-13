@@ -1,7 +1,7 @@
 \chapter{函数与极限}
 
 \begin{introduction}
-    hahaha
+    请你先熟悉一下elegantbook的使用. 
 \end{introduction}
 
 \section{实数}
@@ -12,9 +12,11 @@
 
 \newtheorem{definition}[有理数]
     两个既约整数的比值. 
-    \item 整数的比值
-    \item 既约: 已经约分过. 没有比1更大的公约数. 
-    A = \{ x \in \mathbb{R} \mid x > 0 \}
+    \begin{itemize}
+        \item 整数的比值
+        \item 既约: 已经约分过. 没有比$1$更大的公约数. 
+    \end{itemize}
+     A = \{ x \in \mathbb{R} \mid x > 0 \}
 
 \newtheorem{definition}[数域]
     对加减乘除四则运算封闭的数的集合. (本质还是集合)
@@ -28,12 +30,14 @@
 
 如何证明无理数存在. (这里有一个关于毕达哥拉斯的故事), 直观在数轴上有理数之间总是有一个有理数, 似乎整个数轴上全是有理数. 稠密. 
 
-\begin{proposition}[证明\sqrt{2}不是有理数]
-    \item \sqrt{2} = m / n (m, n \in Q)
-    \item (m, n )= 1
-    \item m^2 = 2* n^2 (\sqrt{2}不知道是不是有理数, 先进行转化)
-    \item m = 2n, 与题设矛盾. 
-\end{proposition}
+\begin{proof}[证明\sqrt{2}不是有理数]
+    \begin{itemize}
+        \item \sqrt{2} = m / n (m, n \in Q)
+        \item (m, n )= 1
+        \item m^2 = 2* n^2 (\sqrt{2}不知道是不是有理数, 先进行转化)
+        \item m = 2n, 与题设矛盾. 
+    \end{itemize}
+\end{proof}
 \begin{comment}
     这里学习的关键在于学会了
     \item 反证法
@@ -44,81 +48,85 @@
 
 \newtheorem{definition}[实数集的定义]
     有理数和无理数的集合. 
-\end{definition}
 
 \newtheorem{definition}[实数性质]
-    \item 是一个数域. 
-    \item 对加法乘法满足交换律, 分配率, 结合率. 
-    \item 是一个有序数域. (即每个数字之间都可以比较, 反例可参照地铁站点. )
-    \item 具有完备性. 
-\end{definition}
+    \begin{itemize}
+        \item 是一个数域. 
+        \item 对加法乘法满足交换律, 分配率, 结合率. 
+        \item 是一个有序数域. (即每个数字之间都可以比较, 反例可参照地铁站点. )
+        \item 具有完备性. 
+    \end{itemize}
 
 \newtheorem{definition}[实数的完备性]
     实数布满数轴. 
     在实数域中, 每一个单调有界序列都存在极限. (相关的定义证明在后续提及)
-\end{definition}
 
 \begin{proof}
     两个有理数之间必定存在有理数. 
     两个有理数之间必定存在无理数. 
     两个无理数之间制定存在有理数. (利用小数的直观推理, 借助有理数的性质去逼近)
     两个无理数之间必定存在无理数. 
-\end{exercise}
-
+\end{proof}
 
 \section{变量与函数}
 
 \newtheorem{definition}
     [函数的定义]
-    \item 自变量
-    \item 定义域
-    \item 对应关系
-\end{definition}
+    \begin{itemize}
+        \item 自变量
+        \item 定义域
+        \item 对应关系
+    \end{itemize}
 
 \newtheorem{definition}
     [映射]
-    \item 映射: 一个集合中的元素和另一个集合中的元素的一种对应关系. 
-    \item 像点: 映射的集合中被映射了的元素. 
-    \item 像集合: 像点的集合. 
-    \item 单射: 被映射的集合中的元素对应的像点各不相同. 
-    \item 满射: 被映射的的集合中的元素都是像点. 
-    \item 双射: 映射的集合中的元素都有唯一的像点. (可以把两个集合交换单射的性质不会改变)
-\end{definition}
+    \begin{itemize}
+        \item 映射: 一个集合中的元素和另一个集合中的元素的一种对应关系. 
+        \item 像点: 映射的集合中被映射了的元素. 
+        \item 像集合: 像点的集合. 
+        \item 单射: 被映射的集合中的元素对应的像点各不相同. 
+        \item 满射: 被映射的的集合中的元素都是像点. 
+        \item 双射: 映射的集合中的元素都有唯一的像点. (可以把两个集合交换单射的性质不会改变)
+    \end{itemize}
 
 \subsection{基本初等函数}
 
 \newtheorem{definition}
     [基本初等函数]
-    \item 常数
-    \item 幂函数
-    \item 指数函数
-    \item 对数函数
-    \item 三角函数
-    \item 反三角函数
-\end{definition}
+    \begin{itemize}
+        \item 常数
+        \item 幂函数
+        \item 指数函数
+        \item 对数函数
+        \item 三角函数
+        \item 反三角函数
+    \end{itemize}
 \begin{comment}
     基本初等函数很重要, 在之后的学习中几乎所有函数都可以使用基本初等函数经过有限次的基本运算接近, 是今后研究函数的基础.
 \end{comment}
 
 读者必须了解熟悉基本初等函数的性质. 
 而通常研究函数的性质从一下几方面入手: 
-\item 定义域
-\item 对应关系
-\item 值域
-\item 图像
-\item 奇偶性
-\item 周期性
-\item 单调性
-\item 对称性
-\item 有界性
-\item 最值, 极值
-\item 常用的相关公式
+\begin{itemize}
+    \item 定义域
+    \item 对应关系
+    \item 值域
+    \item 图像
+    \item 奇偶性
+    \item 周期性
+    \item 单调性
+    \item 对称性
+    \item 有界性
+    \item 最值, 极值
+    \item 常用的相关公式
+\end{itemize}
 
 \newtheorem{definition}
     [其他应当熟悉的函数]
-    \item 双曲函数
-    \item 狄利克雷函数
-    \item 取整函数
-    \item 符号函数
-    \item 绝对值函数
-\end{definition}
+    \begin{itemize}
+        \item 双曲函数
+        \item 狄利克雷函数
+        \item 取整函数
+        \item 符号函数
+        \item 绝对值函数
+    \end{itemize}

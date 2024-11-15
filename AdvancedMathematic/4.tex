@@ -1,0 +1,63 @@
+\chapter{微分中值定理与Taylor公式}
+
+\section{微分中值定理}
+
+\begin{theorem}[罗尔中值定理]
+    简单说就是只要两点函数值相等, 就有一点的切线平行与x轴.
+    \begin{itemize}
+        前提条件: 
+        \item $f(x)$在$[a, b]$上连续
+        \item $f(x)$在$(a, b)$上可导
+        关键条件: 
+        \item 如果有$f(a) = f(b)$
+        结论:
+        \item 那么在$(a, b)$上至少存在一个$\xi$, 使得$f'(\xi) = 0$
+    \end{itemize}
+\end{theorem}
+
+\begin{proof}
+    假设$f(x)$在$[a, b]$上连续且在$(a, b)$上可导，且有$f(a) = f(b)$。
+    \begin{itemize}
+        \item 如果$f(x)$是常数函数，定理显然成立。
+        \item 如果$f(x)$不是常数函数，那么在$[a, b]$上必定存在至少一个最大值或最小值。不妨设$x = c$是$f(x)$在$[a, b]$上的最大值。
+        \item 左极限lim$_{x \to c^-} f(x) / (x-c) $>=0, 右极限lim$_{x \to c^+} f(x) / (x-c) $<=0。
+        \item 所以$f'(c) = 0$。
+    \end{itemize}
+\end{proof}
+
+\begin{theorem}[拉格朗日中值定理]
+    就是对罗尔中值定理进行旋转. 
+    简单说就是函数在某个区间上的平均速度等于某个点的瞬时速度.
+    \begin{itemize}
+        \item $f(x)$在$[a, b]$上连续
+        \item $f(x)$在$(a, b)$上可导
+        \item 那么在$(a, b)$上至少存在一个$\xi$, 使得$f'(\xi) = \frac{f(b) - f(a)}{b - a}$
+    \end{itemize}
+\end{theorem}
+
+\begin{proof}
+    对函数进行旋转, 使得$f(a) = f(b) = 0$, 然后使用罗尔中值定理.
+\end{proof}
+
+\begin{proof}
+    如果不旋转坐标轴也可以. 关键在于如何利用罗尔中值定理证明. 也就是如何寻找$g'(x) = 0$且$g(a) = g(b)$. 
+    观察拉格朗日定理的结论, 可以看出$f(b) - f(a) = f'(c)(b - a)$
+    进行移项可得$( f(b) - f(a))/(b -a) - f'(c) = 0 = g'(c)$
+    对上式进行积分可得$( f(b) - f(a))/(b -a)*x - f(x) = g(x)$
+    观察可知可以尝试把分式中的分母消去. 修改为$( f(b) - f(a))/(b -a)*(x - a)- f(x) = g(x)$
+    这个变换的妙处在于x分别取a,b时, 一个消去分母, 一个消去整个分式, 保证了算式的工整. 
+    检查发现符合罗尔中值定理. 
+\end{proof}
+
+\begin{corollary}
+    连续且可导的函数的导函数在某个区间恒为0, 那么这个函数就是一个常数函数.
+\end{corollary}
+
+\begin{proof}
+    利用拉格朗日中值定理, 选择任意两个点, $f'(c) = 0 = (f(x) - f(a))/(x - a) $
+    显然可得$f(x) = f(a)$
+\end{proof}
+
+\begin{corollary}
+    定义了函数的单调性, 
+\end{corollary}

@@ -1,8 +1,8 @@
 \chapter{函数与极限}
 
-\begin{introduction}
+\begin{abstract}
     请你先熟悉一下elegantbook的使用. 
-\end{introduction}
+\end{abstract}
 
 \section{实数}
 
@@ -10,15 +10,16 @@
 
 众所周知, 实数分为有理数和无理数. 让我们先进入有理数的领域. 
 
-\newtheorem{definition}[有理数]
+\begin{definition}[有理数]
     两个既约整数的比值. 
     \begin{itemize}
         \item 整数的比值
-        \item 既约: 已经约分过. 没有比$1$更大的公约数. 
+        \item 既约: 已经约分过. 没有比1更大的公约数. 
     \end{itemize}
-     A = \{ x \in \mathbb{R} \mid x > 0 \}
+     $A = \{ x \in \mathbb{R} \mid x > 0 \}$
+\end{definition}
 
-\newtheorem{definition}[数域]
+\begin{definition}[数域]
     对加减乘除四则运算封闭的数的集合. (本质还是集合)
 \end{definition}
 \begin{comment}
@@ -30,14 +31,12 @@
 
 如何证明无理数存在. (这里有一个关于毕达哥拉斯的故事), 直观在数轴上有理数之间总是有一个有理数, 似乎整个数轴上全是有理数. 稠密. 
 
-\begin{proof}[证明\sqrt{2}不是有理数]
-    \begin{itemize}
-        \item \sqrt{2} = m / n (m, n \in Q)
-        \item (m, n )= 1
-        \item m^2 = 2* n^2 (\sqrt{2}不知道是不是有理数, 先进行转化)
-        \item m = 2n, 与题设矛盾. 
-    \end{itemize}
+\begin{proof}[证明 $\sqrt{2}$ 不是有理数]
+    假设 \(\sqrt{2} = \frac{m}{n}\) (其中 \(m, n \in \mathbb{Q}\) 且 \((m, n) = 1\))
+         \(m^2 = 2n^2\) \(\sqrt{2}\) 不知道是不是有理数, 先进行转化
+         \(m = 2n\), 与题设矛盾. 
 \end{proof}
+
 \begin{comment}
     这里学习的关键在于学会了
     \item 反证法
@@ -46,20 +45,23 @@
 
 \subsection{实数集}
 
-\newtheorem{definition}[实数集的定义]
+\begin{definition}[实数集的定义]
     有理数和无理数的集合. 
+\end{definition}
 
-\newtheorem{definition}[实数性质]
+\begin{definition}[实数性质]
     \begin{itemize}
         \item 是一个数域. 
         \item 对加法乘法满足交换律, 分配率, 结合率. 
         \item 是一个有序数域. (即每个数字之间都可以比较, 反例可参照地铁站点. )
         \item 具有完备性. 
     \end{itemize}
+\end{definition}
 
-\newtheorem{definition}[实数的完备性]
+\begin{definition}[实数的完备性]
     实数布满数轴. 
     在实数域中, 每一个单调有界序列都存在极限. (相关的定义证明在后续提及)
+\end{definition}
 
 \begin{proof}
     两个有理数之间必定存在有理数. 
@@ -70,16 +72,15 @@
 
 \section{变量与函数}
 
-\newtheorem{definition}
-    [函数的定义]
+\begin{definition}[函数的定义]
     \begin{itemize}
         \item 自变量
         \item 定义域
         \item 对应关系
     \end{itemize}
+\end{definition}
 
-\newtheorem{definition}
-    [映射]
+\begin{definition}[映射]
     \begin{itemize}
         \item 映射: 一个集合中的元素和另一个集合中的元素的一种对应关系. 
         \item 像点: 映射的集合中被映射了的元素. 
@@ -88,11 +89,11 @@
         \item 满射: 被映射的的集合中的元素都是像点. 
         \item 双射: 映射的集合中的元素都有唯一的像点. (可以把两个集合交换单射的性质不会改变)
     \end{itemize}
+\end{definition}
 
 \subsection{基本初等函数}
 
-\newtheorem{definition}
-    [基本初等函数]
+\begin{definition}[基本初等函数]
     \begin{itemize}
         \item 常数
         \item 幂函数
@@ -101,6 +102,7 @@
         \item 三角函数
         \item 反三角函数
     \end{itemize}
+\end{definition}
 \begin{comment}
     基本初等函数很重要, 在之后的学习中几乎所有函数都可以使用基本初等函数经过有限次的基本运算接近, 是今后研究函数的基础.
 \end{comment}
@@ -121,8 +123,7 @@
     \item 常用的相关公式
 \end{itemize}
 
-\newtheorem{definition}
-    [其他应当熟悉的函数]
+\begin{definition}[其他应当熟悉的函数]
     \begin{itemize}
         \item 双曲函数
         \item 狄利克雷函数
@@ -130,3 +131,4 @@
         \item 符号函数
         \item 绝对值函数
     \end{itemize}
+\end{definition}

@@ -1,4 +1,13 @@
-\documentclass[lang=cn,newtx,10pt,scheme=chinese]{elegantbook}}
+\documentclass{elegantbook}
+\usepackage{amsthm}
+
+% 定义定理环境
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
 
 \title{高等数学}
 
@@ -30,7 +39,11 @@
     以自己的视角尽量展现高等数学学习的逻辑链条. 补充学习的缺陷. 尝试让自己让大家爱上数学. 
     \tableofcontents
     \mainmatter
-    \input{0}
+
+    \input{1}
+    \newpage
+
+    input{4}
     \newpage
     
 \end{document}

@@ -1,5 +1,0 @@
-\contentsline {chapter}{介绍向量}{ii}{chapter*.2}%
-\contentsline {section}{\numberline {0.1}向量和线性组合}{ii}{section.0.1}%
-\contentsline {subsection}{\numberline {0.1.1}三种方式理解向量}{ii}{subsection.0.1.1}%
-\contentsline {subsection}{\numberline {0.1.2}向量加法}{ii}{subsection.0.1.2}%
-\contentsline {subsection}{\numberline {0.1.3}向量数乘}{ii}{subsection.0.1.3}%

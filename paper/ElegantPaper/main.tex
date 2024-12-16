@@ -1,0 +1,17 @@
+%!TEX program = xelatex
+% 完整编译: xelatex -> biber/bibtex -> xelatex -> xelatex
+\documentclass[lang=cn,a4paper,newtx]{elegantpaper}
+
+\title{习题6.5}
+\author{24345072 郑泽锋}
+
+\usepackage{array}
+
+\begin{document}
+    \begin{equation}
+        \gamma (t) = (x(t), y(t))\\
+        x(t) = \cos t, y(t)= \sin t, \gamma '(t) = (-\sin t, \cos t)
+        D_{n}f(x,y)= \nabla f(x,y) \cdot \frac{y}{x^2}\\
+        D_{n}f(x,y)= \nabla f(x,y) \cdot \frac{\gamma '(t)}{| \gamma '(t)|} = (-\frac{2y}{x^3}, \frac{1}{x^2}) \cdot \frac{1}{ \sqrt{2}}(- \sin t, \cos t) = \frac{1}{ \sqrt{2}}(- \frac{2 \sin t}{(\cos t)^3} + \frac{ \cos t}{ (\cos t)^2}) = 0
+    \end{equation}
+\end{document}
